@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Villapiana Move</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
-    h1 { color: #007ACC; }
-    a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: white;
-      background-color: #007ACC;
-      border-radius: 5px;
-    }
-    a.button:hover { background-color: #005F99; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobilità Villapiana</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="icon" href="assets/icons/icon-192.png" />
+  <script defer src="src/app.js"></script>
 </head>
 <body>
-  <h1>Villapiana Move</h1>
-  <p>Guida agli spostamenti da e per Villapiana con mezzi pubblici.</p>
+  <header>
+    <h1>Mobilità Villapiana</h1>
+  </header>
 
-  <div>
-    <a class="button" href="da_villapiana.html">DA Villapiana</a>
-    <a class="button" href="per_villapiana.html">PER Villapiana</a>
-  </div>
+  <main>
+    <section id="route-search"></section>
+    <section id="map"></section>
+  </main>
 
-  <hr>
-
-  <h2>Info utili</h2>
-  <p>Seleziona una delle due opzioni per vedere i percorsi disponibili con autobus e treni.</p>
-
+  <footer>
+    <p>© 2025 Mobilità Villapiana — powered by OpenStreetMap</p>
+  </footer>
 </body>
 </html>
